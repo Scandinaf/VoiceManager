@@ -1,10 +1,11 @@
 import pyaudio
 import wave
+import os
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
-RATE = 44100
+RATE = 16000
 RECORD_SECONDS = 5
 WAVE_OUTPUT_FILENAME = "output.wav"
 
@@ -36,3 +37,8 @@ wf.setsampwidth(p.get_sample_size(FORMAT))
 wf.setframerate(RATE)
 wf.writeframes(b''.join(frames))
 wf.close()
+
+
+print("Converting")
+os.system('C:/TotalAudioConverter/AudioConverter.exe C:/Users/sborovskiy/PycharmProjects/VoiceManager/com/work/voiceManager/output.wav C:/Users/sborovskiy/PycharmProjects/VoiceManager/com/work/voiceManager/output.flac')
+print("Done")
