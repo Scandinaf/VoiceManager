@@ -40,5 +40,5 @@ wf.close()
 
 
 print("Converting")
-os.system('C:/TotalAudioConverter/AudioConverter.exe C:/Users/sborovskiy/PycharmProjects/VoiceManager/com/work/voiceManager/output.wav C:/Users/sborovskiy/PycharmProjects/VoiceManager/com/work/voiceManager/output.flac')
+os.system('D:/soft/TotalAudioConverter/AudioConverter.exe D:/projects/VoiceManager/com/work/voiceManager/output.wav D:/projects/VoiceManager/com/work/voiceManager/output.flac')
 print("Done")
